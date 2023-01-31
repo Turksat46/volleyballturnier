@@ -3,15 +3,26 @@
     margin-right: 20px;
 }
 
+#header{
+    margin: 10px;
+}
+
 #logo{
     width:400px;
     height: auto;
 }
 
 #live{
+    margin: 10px;
     background-color: whitesmoke;
 }
 
 #teams{
+    margin: 10px;
+    background-color: whitesmoke;
+}
+
+#music{
+    margin: 10px;
     background-color: whitesmoke;
 }
