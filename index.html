@@ -19,7 +19,7 @@
         </div>
 
         <div id="live">
-            <h4>Vorspiele</h4>
+            <h4 id="headline">Vorspiele</h4>
             <table><b>1. Runde</b>
                 <tr>
                     <td>Sikijax</td>
@@ -28,7 +28,7 @@
         </div>
 
         <div id="teams">
-            <h4>Die Teams</h4>
+            <h4 id="headline">Die Teams</h4>
                 <table id="teamstabelle">
                     <tr>
                         <th>Sikijax (TGII-3)</th>
@@ -55,7 +55,7 @@
 
         <!--Musik-->
         <div id="music">
-            <h4>Musik</h4>
+            <h4 id="headline">Musik</h4>
             <p><b>Ofizielle Playlist</b></p>
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/25XOcbs5jGs4YTgE72kYH3?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             <p><b>Vorschläge</b></p>
@@ -110,6 +110,10 @@
             var url = document.getElementById("songurlinput");
             if(url.value.includes("playlist")){
                 alert("Playlists werden hier ignoriert!")
+                return;
+            }
+            if(url.value.includes("artist")){
+                alert("Künstlerlinks werden hier ignoriert!")
                 return;
             }
             if(!url.value.includes("open.spotify.com")){
