@@ -4,11 +4,6 @@ Made for :Volleyballturnier
 */
 
 @media screen and (max-width:481px) {
-    #title{
-        float: right;
-        
-    }
-
     #teamstabelle{
         margin:10px;
     }
