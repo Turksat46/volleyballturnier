@@ -11,6 +11,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <!--Für Fomular-->
+        <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+        <script src="scripts.js"></script>
+
+        
     </head>
     <body>
         <div id="header">
@@ -29,23 +36,25 @@
 
         <div id="teams">
             <h4>Die Teams</h4>
-                <table>
+                <table id="teamstabelle">
                     <tr>
                         <th>Sikijax (TGII-3)</th>
-                        <th>Teamname 2</th>
-                        <th>Teamname 3</th>
-                        <th>Teamname 4</th>
-                        <th>Teamname 5</th>
+                        <th>Jyxen</th>
+                        <th>Freakslabor</th>
+                        <th>Lehrer</th>
+                        <th>Blyat</th>
                     </tr>
                     <tr>
                         <td>Kerem Okumus</td>
-                        
+                        <td>Benedikt Ocker</td>
                     </tr>
                     <tr>
                         <td>Marco Fruck</td>
+                        <td>Adolf Müller</td>
                     </tr>
                     <tr>
                         <td>Patrick Pohl</td>
+                        <td>Mister Senor</td>
                     </tr>
                     
                 </table>
@@ -54,6 +63,16 @@
         <!--Musik-->
         <div id="music">
             <h4>Musik</h4>
-
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/45WkQXWa5GDSEzgBWl67iF?utm_source=generator&theme=0" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>    </body>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/45WkQXWa5GDSEzgBWl67iF?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <p><b>
+                Dir gefällt nicht, was du siehst und möchtest gerne deinen Lieblingssong hören?
+                Dann füge hier den Spotifylink vom Song ein! (Nicht jeder Vorschlag wird angenommen. Song muss zur Situation passen!)
+            </b>
+            </p>
+            <form>
+                <input id="songurlinput" type="url" id="songvorschlag" placeholder="Hier den Link einfügen...">
+                <button id="sendenknopf" type="button">Senden</button>
+            </form>
+        </div>
+    </body>            
 </html>
