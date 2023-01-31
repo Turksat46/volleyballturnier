@@ -56,7 +56,10 @@
         <!--Musik-->
         <div id="music">
             <h4>Musik</h4>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/45WkQXWa5GDSEzgBWl67iF?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <p><b>Ofizielle Playlist</b></p>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/25XOcbs5jGs4YTgE72kYH3?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <p><b>Vorschläge</b></p>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2hOUy9RRjDSyOdLrD23Imx?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             <p><b>
                 Dir gefällt nicht, was du siehst und möchtest gerne deinen Lieblingssong hören?
                 Dann füge hier den Spotifylink vom Song ein! (Nicht jeder Vorschlag wird angenommen. Song muss zur Situation passen!)
@@ -105,6 +108,10 @@
     
           var contact_submit = function(){
             var url = document.getElementById("songurlinput");
+            if(url.value.includes("playlist")){
+                alert("Playlists werden hier ignoriert!")
+                return;
+            }
             var data = {
               "url": url.value
             }
