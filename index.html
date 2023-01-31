@@ -112,6 +112,10 @@
                 alert("Playlists werden hier ignoriert!")
                 return;
             }
+            if(!url.value.includes("open.spotify.com")){
+                alert("Das ist kein Spotifylink! Bitte probiere es erneut!")
+                return;
+            }
             var data = {
               "url": url.value
             }
