@@ -8,6 +8,11 @@ Made for :Volleyballturnier
         margin: 3%;
     }
 
+    #plan{
+        border-radius: 15px;
+        margin: 3%;
+    }
+
     #teamstabelle{
         border-radius: 15px;
         margin:10px;
