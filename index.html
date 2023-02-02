@@ -18,40 +18,7 @@
             <h2 id="title"><b>Volleyball-Turnier</b></h2>
         </div>
 
-        <div id="live">
-            <h4 id="headline">Vorspiele</h4>
-            <table><b>1. Runde</b>
-                <tr>
-                    <td>Sikijax</td>
-                </tr>
-            </table>
-        </div>
-
-        <div id="teams">
-            <h4 id="headline">Die Teams</h4>
-                <table id="teamstabelle">
-                    <tr>
-                        <th>Sikijax (TGII-3)</th>
-                        <th>Jyxen</th>
-                        <th>Freakslabor</th>
-                        <th>Lehrer</th>
-                        <th>Blyat</th>
-                    </tr>
-                    <tr>
-                        <td>Kerem Okumus</td>
-                        <td>Benedikt Ocker</td>
-                    </tr>
-                    <tr>
-                        <td>Marco Fruck</td>
-                        <td>Adolf Müller</td>
-                    </tr>
-                    <tr>
-                        <td>Patrick Pohl</td>
-                        <td>Mister Senor</td>
-                    </tr>
-                    
-                </table>
-        </div>
+        <embed id="plan" src="https://www.tournify.de/live/gsgd-colleyballturnier/standings" type="text/html" height="760px" width="400px" style="overflow: hidden;" onload="yeye();">
 
         <!--Musik-->
         <div id="music">
@@ -62,7 +29,8 @@
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2hOUy9RRjDSyOdLrD23Imx?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             <p><b>
                 Dir gefällt nicht, was du siehst und möchtest gerne deinen Lieblingssong hören?
-                Dann füge hier den Spotifylink vom Song ein! (Nicht jeder Vorschlag wird angenommen. Song muss zur Situation passen!)
+                Dann füge hier den Spotifylink vom Song ein! (Nicht jeder Vorschlag wird angenommen. Song muss zur Situation passen!. 
+                Songs werden nur einmal abgespielt und jede weitere Einsendung wird vom System ignoriert!)
             </b>
             </p>
             <form>
@@ -128,5 +96,14 @@
     
           document.getElementById("sendenknopf").addEventListener("click", contact_submit);
         })();
+
+        function yeye(){
+            alert("Yeye");
+            setTimeout(()=>{
+                var element = document.getElementById("plan")
+                         
+            }, 5000)
+
+        }
       </script>        
 </html>
