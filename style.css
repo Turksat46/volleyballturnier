@@ -10,7 +10,7 @@ Made for :Volleyballturnier
 
     #plan{
         border-radius: 15px;
-        margin: 3%;
+        overflow: hidden;
     }
 
     #teamstabelle{
@@ -54,5 +54,10 @@ Made for :Volleyballturnier
     #songurlinput{
         border-radius: 15px;
         background-color: gray;
+    }
+
+    footer{
+        background-color: whitesmoke;
+        width: auto;
     }
 }
