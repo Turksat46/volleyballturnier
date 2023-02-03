@@ -6,6 +6,7 @@ Made for :Volleyballturnier
 @media screen and (max-width:481px) {
     #headline{
         margin: 3%;
+        margin-top: 15px;
     }
 
     #plan{
