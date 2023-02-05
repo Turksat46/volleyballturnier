@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Volleyballturnier</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=0.9">
         <meta name="author" content="Kerem Okumus">
         <link rel="stylesheet" href="style.css">
         <!-- Font Awesome Icons -->
@@ -18,8 +18,8 @@
             <h2 id="title"><b>Volleyball-Turnier</b></h2>
         </div>
 
-        <div id="planwrapper">
-            <embed id="plan" src="https://www.tournify.de/live/gsgd-colleyballturnier/standings" type="text/html" height="760px" width="400px" style="overflow: hidden;" onload="yeye();">
+        <div id="plan">
+            <iframe src="https://www.tournify.de/live/gsgd-colleyballturnier/standings" height="650px" width="400px" class="noScrolling"></iframe>
         </div>
 
         <!--Musik-->
@@ -39,9 +39,6 @@
             </form>
         </div>
     </body>
-    <footer id="footer">
-        <p><b>Made by Turksat46</b></p>
-    </footer>
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
     <script type="text/javascript">

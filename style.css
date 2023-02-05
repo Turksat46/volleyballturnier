@@ -4,14 +4,20 @@ Made for :Volleyballturnier
 */
 
 @media screen and (max-width:481px) {
+    iframe.noScrolling{
+        width: auto; /*or any other size*/
+        height: auto; /*or any other size*/
+        overflow: hidden;
+    }
+
     #headline{
         margin: 3%;
-        margin-top: 15px;
     }
 
     #plan{
         border-radius: 15px;
-        overflow: hidden;
+        margin: 3%;
+        overscroll-behavior: hidden;
     }
 
     #teamstabelle{
@@ -55,10 +61,5 @@ Made for :Volleyballturnier
     #songurlinput{
         border-radius: 15px;
         background-color: gray;
-    }
-
-    footer{
-        background-color: whitesmoke;
-        width: auto;
     }
 }
