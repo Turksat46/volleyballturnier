@@ -5,8 +5,6 @@ Made for :Volleyballturnier
 
 @media screen and (max-width:481px) {
     iframe.noScrolling{
-        width: auto; /*or any other size*/
-        height: auto; /*or any other size*/
         overflow: hidden;
     }
 
