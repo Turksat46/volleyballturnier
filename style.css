@@ -14,8 +14,10 @@ Made for :Volleyballturnier
     }
 
     #plan{
+        height: 650px;
+        width: 400px;
         border-radius: 15px;
-        
+        margin: 3%;
         overscroll-behavior: hidden;
     }
 
