@@ -20,6 +20,11 @@ Made for :Volleyballturnier
         overscroll-behavior: hidden;
     }
 
+    #planhintergrund{
+        border-radius: 15px;
+        background-color: whitesmoke;
+    }
+
     #preistabelle{
         border-radius: 15px;
         margin:10px;
