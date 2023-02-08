@@ -8,6 +8,12 @@ Made for :Volleyballturnier
         overflow: hidden;
     }
 
+    #title{
+        border-radius: 15px;
+        margin: 10px;
+        background-color: whitesmoke;
+    }
+
     #headline{
         margin-top: 6%;
         margin-bottom: 3%;
