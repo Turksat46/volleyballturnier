@@ -18,6 +18,9 @@
             <h2 id="title"><b>Volleyball-Turnier</b></h2>
         </div>
 
+        <div id="header">
+            <h2 id="title><b>DAS TURNIER IST ZU ENDE1</b></h2>
+            </div>
       
         <h4 id="headline">Spielplan</h4>
         <div id="planhintergrund">
@@ -88,13 +91,13 @@
     <script type="text/javascript">
         (function() {
             var firebaseConfig = {
-      apiKey: "AIzaSyAOSmzspw8tLhZK9IhGzneEwQ75lKC2LrY",
-      authDomain: "volleyballturnier-ef732.firebaseapp.com",
-      projectId: "volleyballturnier-ef732",
-      storageBucket: "volleyballturnier-ef732.appspot.com",
-      messagingSenderId: "1041265159872",
-      appId: "1:1041265159872:web:1a33da8b87db16155d4725",
-      measurementId: "G-696TF0V0E8"
+      apiKey: "XXXXXX",
+      authDomain: "XXXXXX",
+      projectId: "XXXXXX",
+      storageBucket: "XXXXXXXX",
+      messagingSenderId: "XXXXXXX",
+      appId: "XXXXXXX",
+      measurementId: "XXXXXXXX"
     };
     
           firebase.initializeApp(firebaseConfig);
@@ -138,11 +141,12 @@
             push_to_firebase(data);
           }
     
-          document.getElementById("sendenknopf").addEventListener("click", contact_submit);
+          
         })();
 
         function yeye(){
-
+            alert("DAS TURNIER IST ZU ENDE! Es werden keine Vorschläge mehr angenommen!");
         }
+       document.getElementById("sendenknopf").addEventListener("click", yeye);
       </script>        
 </html>
