@@ -28,7 +28,7 @@ Dazu haben wir es auf die Webseite mit der folgenden Funktion implementiert:
 Dies ermöglicht uns, eine komplette Seite anzeigen zu lassen, ohne irgendwelche großen Einschränkungen.
 Es gibt jedoch eine Sache, die mich besonders nervt.
 
-Bei der CSS-Datei gibt es das Attribut 
+Bei der CSS-Datei gibt es das Attribut overscroll-behavior.
 ```css
 #plan{
         height: 650px;
@@ -37,6 +37,7 @@ Bei der CSS-Datei gibt es das Attribut
         overscroll-behavior: hidden;
     }
 ```
+Dies ist eine Eigenschaft, in der man vorgeben kann, was passieren soll, wenn das Bild größer ist als das Fenster.Sprich, wenn wir ein Bild in Größe 15x15cm haben aber der Rahmen nur 10x10cm groß ist. 
 
 ### Spotify
 
