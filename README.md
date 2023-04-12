@@ -14,7 +14,7 @@ Hier findet man die wichtigen Dateien für die Website, wie die HTML und CSS-Dat
 </ul> 
 
 ## Frontend
-Es gibt viele interessanten Mechanismen hinter der Webseite, die bewusst im Vordergrund nicht gezeigt werden.        
+Es arbeiten viele interessante Mechanismen hinter der Webseite, die bewusst im Vordergrund nicht gezeigt werden.        
 
 ### Spielplan
 Es fängt schon mit dem Spielplan an.
@@ -26,7 +26,7 @@ Dazu haben wir es auf die Webseite mit der folgenden Funktion implementiert:
 ```
 
 Dies ermöglicht uns, eine komplette Seite anzeigen zu lassen, ohne irgendwelche großen Einschränkungen.
-Es gibt jedoch eine Sache, die mich besonders nervt.
+Es gibt jedoch eine Sache die mich besonders nervt:
 
 Bei der CSS-Datei gibt es das Attribut overscroll-behavior.
 ```css
@@ -37,7 +37,7 @@ Bei der CSS-Datei gibt es das Attribut overscroll-behavior.
         overscroll-behavior: hidden;
     }
 ```
-Dies ist eine Eigenschaft, in der man vorgeben kann, was passieren soll, wenn das Bild größer ist als das Fenster.Sprich, wenn wir ein Bild in Größe 15x15cm haben aber der Rahmen nur 10x10cm groß ist. 
+Dies ist eine Eigenschaft, in der man vorgeben kann, was passieren soll, wenn das Bild größer ist als das Fenster. Sprich, wenn wir ein Bild in Größe 15x15cm haben aber der Rahmen nur 10x10cm groß ist. Jedoch macht diese Eigenschaft in der Datei absolut nichts. Vielleicht wurde was vergessen, aber ich saß da wieder zu lange dran.
 
 ### Spotify
 
@@ -54,4 +54,6 @@ Die Datenbank ist von Firebase, welches von Google betrieben wird. Jeder Songvor
   <li>Zeitstempel</li>
   <li>Song-URL</li>
 </ol> 
-Diese werden anonymisiert an die Datenbank, welches sich in der EU befindet, gesendet und somit braucht man keine Datenschutzerklärung.
+
+       
+Diese werden anonymisiert an die Datenbank, welches sich in der EU befindet, gesendet und werden dann lokal auf einem Tablet durch einen Menschen verarbeitet.
